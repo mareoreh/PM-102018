@@ -12,8 +12,8 @@ class SecondActivity : AppCompatActivity() {
 
         val tvWelcomeMessage = findViewById<TextView>(R.id.tvWelcomeMessage)
 
-        val userName = intent.getStringExtra("USER_NAME") ?: "Nieznajomy"
-        val studentId = intent.getStringExtra("STUDENT_ID") ?: "Brak ID"
+        val userName = intent.getStringExtra("USER_NAME") ?: "Maryna"
+        val studentId = intent.getStringExtra("STUDENT_ID") ?: "102018"
 
         tvWelcomeMessage.text = "Witaj, $userName!\nTwój numer studenta: $studentId"
     }
